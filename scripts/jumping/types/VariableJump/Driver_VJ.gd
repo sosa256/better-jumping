@@ -46,7 +46,6 @@ func _physics_process(delta):
 		# Updates our current height and distance in a jump.
 		max_hight_dist.update(global_position, is_on_floor())
 		
-		# This motherfucker...
 		# Placed here b/c gravity affects the vel.y so it can't 0 (zero).
 		# Thus affecting certain detection mechanisms in coyote time.
 		ct.coyote_wo_falling(velocity.y)
