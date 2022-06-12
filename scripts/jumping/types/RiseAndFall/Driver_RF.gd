@@ -12,7 +12,7 @@
 # the inital velocity turns out to be."
 
 tool
-extends Jumping_TTL
+extends Jumping_RF
 
 
 

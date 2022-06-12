@@ -9,12 +9,12 @@ extends Node
 
 ## DATA
 # Player reference.
-export (NodePath) var p_path
-onready var player:KinematicBody2D = get_node(p_path)
+export (NodePath) var player_node_path
+onready var player:KinematicBody2D = get_node(player_node_path)
 
 # Lable reference.
-export (NodePath) var l_path
-onready var debug_label:Label = get_node(l_path)
+export (NodePath) var label_node_path
+onready var debug_label:Label = get_node(label_node_path)
 
 # String formats for the debug_label.
 var maxes = "Max height: %f\nMax distance: %f\n"
@@ -27,6 +27,9 @@ var velocity = "Velocity\nx:%3d\ny:%3d\n\n"
 # Main loop.
 func _process(_delta):
 	# Write the current maximums.
+	# If there's an error here that means the lable NodePath was probably null.
+	# Fix it by going to the scene's root node and adding the paths (in Script Variables) 
+	# from the editor. 
 	debug_label.text = maxes % [player.max_hight_dist.get_max_height(), player.max_hight_dist.get_max_distance()]
 	
 	# Write the current player velocity.

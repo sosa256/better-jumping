@@ -20,7 +20,7 @@ enum curve_types {BASE, RISE, FALL, EARLY_RELEASE}
 # Jump properties. (exposed)
 # Units are in pixels.
 var max_lateral_speed := 420 setget set_max_lateral_speed, get_max_lateral_speed
-var max_jump_height   := 420 setget   set_max_jump_height, get_max_jump_height
+var max_jump_height   := 120 setget   set_max_jump_height, get_max_jump_height
 var max_distance      := 420 setget      set_max_distance, get_max_distance
 
 # States to figure out which gravity to use.
