@@ -11,8 +11,8 @@ font_data = ExtResource( 4 )
 
 [node name="TestingChamber" type="Node"]
 script = ExtResource( 3 )
-p = NodePath("Player")
-l = NodePath("Debug/Label")
+player_node_path = NodePath("Player")
+label_node_path = NodePath("Debug/Label")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 240, -119 )
@@ -31,9 +31,6 @@ margin_bottom = 60.0
 custom_fonts/font = SubResource( 1 )
 text = "X: 
 y: "
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Floors" type="Node2D" parent="."]
 position = Vector2( 0, -246 )
@@ -63,12 +60,12 @@ position = Vector2( 231, 220 )
 scale = Vector2( 3, 2 )
 
 [node name="Floor5" parent="Floors" instance=ExtResource( 1 )]
-position = Vector2( 74, 173 )
+position = Vector2( 25, 157 )
 scale = Vector2( 3, 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 383, 0 )
-script = null
+"Jump Stats/Height (max)" = 120
 
 [node name="CoyoteTime" type="Node" parent="Player"]
 script = ExtResource( 6 )
