@@ -40,7 +40,7 @@ There are 3 different types of jump models
 Each jump can have it's characteristics modified through the Godot editor
 Examples of each jump model
 
-![Rise and fall model](assets/readme/RF_example.png)
-![True to life  model](assets/readme/TTL_example.png)
-![Variable jump model](assets/readme/VJ_example.png)
+![Rise and fall model](assets/readme/RF_example.gif)
+![True to life  model](assets/readme/TTL_example.gif)
+![Variable jump model](assets/readme/VJ_example.gif)
 
